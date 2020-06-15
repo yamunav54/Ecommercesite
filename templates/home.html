@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<style>
+    .hello-msg{
+      font-size: 18px;
+      color:black;
+      margin-right: 20px;
+      float:right;
+    }
+    h3{
+        text-align: center;
+    }
+
+  </style>
+
+    <h3>Welcome to my Shopping Cart Page
+
+
+
+    <span class="hello-msg">Hello,{{request.user}}</span></h3>
+    <span><a class="hello-msg" href="{% url 'logout'%}">Logout</a></span>
+{% endblock%}
+    </body>
+</html>
